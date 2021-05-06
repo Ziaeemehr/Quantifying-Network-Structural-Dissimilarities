@@ -1,6 +1,6 @@
 # Quantifying network structural dissimilarities 
 
-##Tiago A. Schieber, Laura Carpi, Albert Díaz-Guilera, Panos M. Pardalos, Cristina Masoller and Martín G. Ravetti
+#### Tiago A. Schieber, Laura Carpi, Albert Díaz-Guilera, Panos M. Pardalos, Cristina Masoller and Martín G. Ravetti
 
 For information regarding the dataset download, algorithm and codes please read the "readme.txt" file.
 
@@ -11,14 +11,13 @@ In this repository, you will find the codes and instances used in the article:
 
 Quantifying network structural dissimilarities by Tiago A. Schieber, Laura Carpi, Albert Díaz-Guilera, Panos M. Pardalos, Cristina Masoller and Martín G. Ravetti
 
-
-##Algorithm
+## Algorithm
 
 The algorithm is written in R and uses functions from the igraph library (The Network Analysis Package - http://igraph.org/). The program reads two graphs on an edge list format, the weights (w1, w2 and w3) and computes the D-distance, as discussed in the article. 
 
-download algorithm: d_distance.r
+download algorithm: `d_distance.r`
 
-Instructions: after running the d_distance.r file make:
+Instructions: after running the `d_distance.r` file make:
 
 D(g,h,w1,w2,w3)
 
@@ -28,9 +27,8 @@ As discussed in the article, there is a significant computational drawback in us
 
 For example, d("net1.txt","net2.txt",0.45,0.45,0.1) computes the dissimilarity measure considering w1=0.45, w2=0.45 and w3=0.1 between the networks net1.txt and net2.txt in an edgelist format disconsidering the Jensen-Shannon between the alpha-centrality distribution of the graph's complement.
 
+## Instances for the non-isomorphic test
 
-##Instances for the non-isomorphic test
- 
  The experiment consists in computing the D-distance between pairs of known non-isomorphic graphs.  
 
 ### Generation
@@ -44,7 +42,7 @@ Some files are in 7zip format (see http://www.7-zip.org/ for more information).
 
 
 |Nodes| #graphs| Files |
-|:-------------:|:-------------:| -----:| 
+|:-------------:|:-------------:| -----:|
 | 4 | 11|[graph_n=4](https://drive.google.com/file/d/0B92qPSf2Wn1LYnk0b0IteW9ISXM/view) |
 |5|34|[graph_n=5](https://drive.google.com/file/d/0B92qPSf2Wn1LZDFYYmVES01WZEk/view)|
 |6|156|[graph_n=6](https://drive.google.com/file/d/0B92qPSf2Wn1LdGRZR1diNy1DYUk/view)|
@@ -80,8 +78,8 @@ Non-isomorphic connected trees
 
 |Nodes| # graphs| Files|
 |:-----:|:-----:|:-----:|
-|18|123867|[connected_trees_n=18](https://drive.google.com/file/d/0B92qPSf2Wn1LNFlzZUtfd2ZQTDA/view) (3 MB)| 
-|20|823065|[connected_trees_n=20](https://drive.google.com/file/d/0B92qPSf2Wn1LRmpzYkFKcnRPWWM/view) (27 MB)| 
+|18|123867|[connected_trees_n=18](https://drive.google.com/file/d/0B92qPSf2Wn1LNFlzZUtfd2ZQTDA/view) (3 MB)|
+|20|823065|[connected_trees_n=20](https://drive.google.com/file/d/0B92qPSf2Wn1LRmpzYkFKcnRPWWM/view) (27 MB)|
 |21|2144505| [connected_trees_n=21](https://drive.google.com/file/d/0B92qPSf2Wn1LVVhnRWJuU2tib0E/view) (76 MB)|
 
  
